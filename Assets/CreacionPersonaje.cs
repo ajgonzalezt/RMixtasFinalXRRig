@@ -125,7 +125,7 @@ Vector3 position = capsula.transform.position;
 
     private void moverCamaraD()
     {
-        Vector3 position = new Vector3(0,-5,0);
+        Vector3 position = new Vector3(-2.13f, -3.76f, -3.54f);
         camaraXR.transform.position = position;
 
     }
