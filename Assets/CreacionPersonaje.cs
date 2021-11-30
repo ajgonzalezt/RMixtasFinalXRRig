@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.XR;
@@ -13,55 +13,129 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class CreacionPersonaje : MonoBehaviour
 {
     public GameObject camaraXR;
-    public XRController controller = null;
-    private bool done = false;
-    public GameObject control;
+    [SerializeField] private InputActionReference actionReferenceCamara;
+
+
+    [SerializeField] private InputActionReference actionReferenceCamaraB;
+    [SerializeField] private InputActionReference actionReferenceCamaraC;
+    [SerializeField] private InputActionReference actionReferenceCamaraD;
+
+    public GameObject capsula;
     // Start is called before the first frame update
     void Start()
     {
-     }
+        actionReferenceCamara.action.performed += OnCambioCamara;
 
-    
+        actionReferenceCamaraB.action.performed += OnCambioCamaraB;
+
+        actionReferenceCamaraC.action.performed += OnCambioCamaraC;
+
+        actionReferenceCamaraD.action.performed += OnCambioCamaraD;
+        moverCamaraD();
+    }
+
+
 
     // Update is called once per frame
     void Update()
+    { 
+    }
+
+
+    IEnumerator moverCamaraA()
     {
-        Vector3 pos = new Vector3(1, 1, 1);
-        //if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool menubutton))
-        //  Debug.Log("MAGK");
-        
-        if (done != true)
+
+        for (int i = 0; i < 10; i++)
         {
-            StartCoroutine(moverCamara(pos));
-            done =true;
+            yield return new WaitForSeconds(0.01f);
+
+            camaraXR.transform.position += new Vector3(0,0.2f,0.3f);
+
         }
-        
+        StartCoroutine(moverCamaraPos2A());
+
     }
 
-
-    IEnumerator moverCamara(Vector3 pos)
+    IEnumerator moverCamaraPos2A()
     {
-        yield return new WaitForSeconds(5);
-
-        for (int i = 0; i <= 6; i++)
+        yield return new WaitForSeconds(2);
+        Vector3 position = capsula.transform.position + new Vector3(0, 2, 3);
+        camaraXR.transform.position =position;
+        yield return new WaitForSeconds(2);
+        for (int i = 0; i < 10; i++)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.01f);
 
-            GameObject ball = GameObject.FindGameObjectWithTag("ball");
-            pos = ball.GetComponent<Transform>().position;
-            camaraXR.transform.position = pos;
-            Debug.Log("LLEgo");
+            camaraXR.transform.position -= new Vector3(0, 0.2f, 0.3f);
+
         }
-        StartCoroutine(moverCamaraPos2(pos));
+
 
     }
-
-    IEnumerator moverCamaraPos2(Vector3 pos)
+    private void OnCambioCamara(InputAction.CallbackContext obj)
     {
-        yield return new WaitForSeconds(00.7f);
-        camaraXR.transform.position = new Vector3(5, 5, 5);
+        StartCoroutine(moverCamaraA());
+    }
+
+
+
+    IEnumerator moverCamaraB()
+    {
+
+      
+      camaraXR.transform.position += new Vector3(0, 2f, 3f);
+
+      yield return new WaitForSeconds(2);
+
+      StartCoroutine(moverCamaraPos2B());
 
     }
 
-   }
+    IEnumerator moverCamaraPos2B()
+    {
+        Vector3 position = capsula.transform.position + new Vector3(0, 2, 3);
+        camaraXR.transform.position = position;
+       
+        yield return new WaitForSeconds(2);
+        
+        camaraXR.transform.position -= new Vector3(0, 2f, 3f);
+
+    }
+
+    private void OnCambioCamaraB(InputAction.CallbackContext obj)
+    {
+        StartCoroutine(moverCamaraB ());
+    }
+
+
+
+    private void moverCamaraC()
+    {
+Vector3 position = capsula.transform.position;
+        camaraXR.transform.position = position;
+
+    }
+
+  
+
+    private void OnCambioCamaraC(InputAction.CallbackContext obj)
+    {
+        moverCamaraC();
+    }
+
+    private void moverCamaraD()
+    {
+        Vector3 position = new Vector3(0,-5,0);
+        camaraXR.transform.position = position;
+
+    }
+
+
+
+    private void OnCambioCamaraD(InputAction.CallbackContext obj)
+    {
+        moverCamaraD();
+    }
+
+}
 
