@@ -1,6 +1,6 @@
 # RMixtasFinalXRRig
 #Soy Andrés y soy un tetra tarado cagador de arcoiris, furro y amante de los unicornios que no sabe cerrar su sesión en github :VVVVV
-
+```
               ,,))))))));,
            __)))))))))))))),
 \|/       -\(((((''''((((((((.
@@ -20,3 +20,4 @@
            `\_|                   (,~~  -Mi unicornio el semental :3
                                    \~\
                                     ~~
+```
