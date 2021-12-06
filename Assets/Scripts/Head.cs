@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 public class Head : MonoBehaviour
 {
-    [SerializeField] private Transform rootObject, followObject;
+    [SerializeField] private Transform rootObject, followObject, spine;
     [SerializeField] private Vector3 positionOffset, rotationOffset, headBodyOffset;
     public bool isActive;
     public float maxRotation;
@@ -25,6 +25,9 @@ public class Head : MonoBehaviour
             {
                 rootObject.position = transform.position + headBodyOffset;
                 rootObject.forward = Vector3.ProjectOnPlane(followObject.up, Vector3.up).normalized;
+
+               Quaternion rot =   Quaternion.Euler(followObject.rotation.y * 0.8f, 0f, 0f);
+                spine.rotation = (followObject.rotation * Quaternion.Euler(new Vector3(180, -270, 90)));
 
                 transform.position = followObject.TransformPoint(positionOffset);
                 transform.rotation = followObject.rotation * Quaternion.Euler(rotationOffset);

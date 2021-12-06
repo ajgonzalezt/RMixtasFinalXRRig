@@ -2326,6 +2326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 1388821982}
   followObject: {fileID: 360116680}
+  spine: {fileID: 0}
   positionOffset: {x: 0, y: -0.15, z: -0.11}
   rotationOffset: {x: 180, y: -270, z: 90}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
@@ -2536,6 +2537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 935723865}
   followObject: {fileID: 360116680}
+  spine: {fileID: 1478508042}
   positionOffset: {x: 0, y: -0.15, z: -0.11}
   rotationOffset: {x: 180, y: -270, z: 90}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
@@ -3259,7 +3261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346556132}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
   m_Name: 
@@ -4010,6 +4012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 476903790}
   followObject: {fileID: 360116680}
+  spine: {fileID: 0}
   positionOffset: {x: 0, y: -0.15, z: -0.11}
   rotationOffset: {x: 180, y: -270, z: 90}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
@@ -4649,6 +4652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 935723865}
   followObject: {fileID: 360116680}
+  spine: {fileID: 0}
   positionOffset: {x: 0, y: -0.15, z: -0.11}
   rotationOffset: {x: 180, y: -270, z: 90}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
@@ -4900,56 +4904,6 @@ Transform:
   m_Father: {fileID: 1446604711}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &556069202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 556069203}
-  - component: {fileID: 556069204}
-  m_Layer: 0
-  m_Name: IK_Head_target
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &556069203
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556069202}
-  m_LocalRotation: {x: -0.58135116, y: 0.4025299, z: 0.5813508, w: -0.40253168}
-  m_LocalPosition: {x: -0.0000009387731, y: 1.7369666, z: 0.024588346}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1954983640}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &556069204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556069202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f6fccb4744786a4ba1c069d138227a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rootObject: {fileID: 935723865}
-  followObject: {fileID: 360116680}
-  positionOffset: {x: 0, y: -0.15, z: -0.11}
-  rotationOffset: {x: 180, y: -270, z: 90}
-  headBodyOffset: {x: 0, y: -1.7, z: 0}
-  isActive: 1
-  maxRotation: -1
 --- !u!1 &564141946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,6 +4949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 178414864}
   followObject: {fileID: 360116680}
+  spine: {fileID: 0}
   positionOffset: {x: 0, y: -0.15, z: -0.11}
   rotationOffset: {x: 180, y: -270, z: 90}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
@@ -6348,7 +6303,6 @@ Transform:
   - {fileID: 1507518482}
   - {fileID: 1671868231}
   - {fileID: 1312102920}
-  - {fileID: 1954983640}
   m_Father: {fileID: 935723865}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10810,15 +10764,7 @@ MonoBehaviour:
     m_Active: 1
   - m_Rig: {fileID: 1497054396}
     m_Active: 1
-  m_Effectors:
-  - m_Transform: {fileID: 1330805521}
-    m_Style:
-      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
-      color: {r: 1, g: 0, b: 0, a: 0.5}
-      size: 0.1
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
-    m_Visible: 1
+  m_Effectors: []
 --- !u!95 &935723864
 Animator:
   serializedVersion: 3
@@ -10846,7 +10792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935723861}
   m_LocalRotation: {x: -0, y: -0.17149305, z: -0, w: 0.9851853}
-  m_LocalPosition: {x: 5.598, y: 0, z: -0.015}
+  m_LocalPosition: {x: 5.346435, y: 0, z: 0.6846434}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1708669216}
@@ -11192,6 +11138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 870324797}
   followObject: {fileID: 360116680}
+  spine: {fileID: 0}
   positionOffset: {x: 0, y: -0.15, z: -0.11}
   rotationOffset: {x: 180, y: -270, z: 90}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
@@ -12250,7 +12197,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -12269,7 +12216,7 @@ MonoBehaviour:
     showVertexPathOptions: 1
     showNormals: 1
     showNormalsHelpInfo: 0
-    tabIndex: 0
+    tabIndex: 1
   initialized: 1
 --- !u!114 &1159559036
 MonoBehaviour:
@@ -15459,7 +15406,7 @@ MonoBehaviour:
     m_SourceObjects:
       m_Length: 1
       m_Item0:
-        transform: {fileID: 1939273269}
+        transform: {fileID: 233325504}
         weight: 1
       m_Item1:
         transform: {fileID: 0}
@@ -16145,6 +16092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 935723865}
   followObject: {fileID: 360116680}
+  spine: {fileID: 0}
   positionOffset: {x: 0, y: -0.15, z: -0.11}
   rotationOffset: {x: 180, y: -270, z: 90}
   headBodyOffset: {x: 0, y: -1.7, z: 0}
@@ -19398,91 +19346,6 @@ Transform:
   m_Father: {fileID: 839913404}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1954983639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1954983640}
-  - component: {fileID: 1954983641}
-  m_Layer: 0
-  m_Name: IK_Head (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1954983640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954983639}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 556069203}
-  m_Father: {fileID: 684120481}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1954983641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954983639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8935e03361a14ec4b8edc872f76bc822, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Weight: 1
-  m_Data:
-    m_ConstrainedObject: {fileID: 1478508042}
-    m_SourceObjects:
-      m_Length: 1
-      m_Item0:
-        transform: {fileID: 1478508042}
-        weight: 1
-      m_Item1:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item2:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item3:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item4:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item5:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item6:
-        transform: {fileID: 0}
-        weight: 0
-      m_Item7:
-        transform: {fileID: 0}
-        weight: 0
-    m_ConstrainedPositionAxes:
-      x: 1
-      y: 1
-      z: 1
-    m_ConstrainedRotationAxes:
-      x: 1
-      y: 1
-      z: 1
-    m_MaintainPositionOffset: 0
-    m_MaintainRotationOffset: 0
-  m_SourceObjectsGUIToggle: 1
-  m_SettingsGUIToggle: 0
 --- !u!1 &1965166349
 GameObject:
   m_ObjectHideFlags: 0
