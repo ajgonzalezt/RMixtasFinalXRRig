@@ -12232,7 +12232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closedLoop: 0
   waypoints:
-  - {fileID: 1240293983}
+  - {fileID: 360116680}
   - {fileID: 1768543562}
   - {fileID: 1654394513}
 --- !u!4 &1159559037
@@ -13079,12 +13079,6 @@ Transform:
 --- !u!1 &1240293981 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3979771264546198040, guid: 0a297e26af348cb4ab776627b7d18927,
-    type: 3}
-  m_PrefabInstance: {fileID: 3979771264581905337}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1240293983 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3979771264546198043, guid: 0a297e26af348cb4ab776627b7d18927,
     type: 3}
   m_PrefabInstance: {fileID: 3979771264581905337}
   m_PrefabAsset: {fileID: 0}
@@ -21282,7 +21276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148063900264}
   m_LocalRotation: {x: -0, y: -0.8056417, z: -0, w: 0.59240305}
-  m_LocalPosition: {x: 1.9449583, y: 0.18799996, z: 5.555615}
+  m_LocalPosition: {x: 1.9449583, y: -0.81, z: 5.555615}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8879528567904802892}
@@ -25625,7 +25619,7 @@ PrefabInstance:
     - target: {fileID: 3979771265494992954, guid: 0a297e26af348cb4ab776627b7d18927,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.638
       objectReference: {fileID: 0}
     - target: {fileID: 3979771265494992954, guid: 0a297e26af348cb4ab776627b7d18927,
         type: 3}
