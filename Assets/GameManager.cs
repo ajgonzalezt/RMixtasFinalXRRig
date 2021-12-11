@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public Transform point2;
     public Transform currentCharacter;
     public bool isInSwap = false;
+    public bool changePath = false;
+    public Transform XRRig;
 
     private void Awake()
     {
