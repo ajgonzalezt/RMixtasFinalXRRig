@@ -25,7 +25,7 @@ namespace PathCreation.Examples
 
         void Update()
         {
-            if (pathCreator != null)
+            if (pathCreator != null && GameManager.Instance.isInSwap)
             {
 
                
@@ -68,7 +68,7 @@ namespace PathCreation.Examples
 
                   Debug.Log(dirNum * yAngle);
 
-                transform.Rotate(0, dirNum * yAngle, 0);
+                //transform.Rotate(0, dirNum * yAngle, 0);
                // Camera.main.transform.LookAt(newPos);
 
 

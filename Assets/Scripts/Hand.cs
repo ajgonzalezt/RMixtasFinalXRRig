@@ -43,7 +43,7 @@ public class Hand : MonoBehaviour
         _body = GetComponent<Rigidbody>();
         _body.collisionDetectionMode = CollisionDetectionMode.Continuous;
         _body.interpolation = RigidbodyInterpolation.Interpolate;
-        _body.mass = 20f;
+        _body.mass = 0f;
         
         // Teleport hands
         _body.position = _followTarget.position;
@@ -72,7 +72,8 @@ public class Hand : MonoBehaviour
         var rotationWithOffset = _followTarget.rotation * Quaternion.Euler(rotationOffset);
         var q = rotationWithOffset * Quaternion.Inverse(_body.rotation);
         q.ToAngleAxis(out float angle, out Vector3 axis);
-        _body.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed);
+        //_body.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed);
+        transform.rotation = _followTarget.rotation * Quaternion.Euler(rotationOffset); ;
     }
 
     // internal void SetGrip(float v)

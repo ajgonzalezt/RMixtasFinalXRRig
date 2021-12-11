@@ -21,13 +21,13 @@ public class Head : MonoBehaviour
         
         if (isActive) {
 
-            if (maxRotation < 0)
+            if (true)
             {
                 rootObject.position = transform.position + headBodyOffset;
                 rootObject.forward = Vector3.ProjectOnPlane(followObject.up, Vector3.up).normalized;
 
-               Quaternion rot =   Quaternion.Euler(followObject.rotation.y * 0.8f, 0f, 0f);
-                spine.rotation = (followObject.rotation * Quaternion.Euler(new Vector3(180, -270, 90)));
+              // Quaternion rot =   Quaternion.Euler(followObject.rotation.y * 0.8f, 0f, 0f);
+               // spine.rotation = (followObject.rotation * Quaternion.Euler(new Vector3(180, -270, 90)));
 
                 transform.position = followObject.TransformPoint(positionOffset);
                 transform.rotation = followObject.rotation * Quaternion.Euler(rotationOffset);
