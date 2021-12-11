@@ -32,6 +32,10 @@ public class PruebaCoords : MonoBehaviour
 
             Debug.Log("X pos" + pos.x + ", Y pos" + pos.y + ", Z pos" + pos.z);
             Debug.Log("X rot" + rot.x + ", Y rot" + rot.y + ", Z rot" + rot.z);
+            Debug.Log(seleccionado.transform.tag);
+            if(seleccionado.tag!="active")
+                seleccionado.GetComponent<Play>().start=true;
+            
         }
 
     }
