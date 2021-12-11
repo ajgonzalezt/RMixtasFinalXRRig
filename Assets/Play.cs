@@ -23,7 +23,7 @@ public class Play : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.Instance.currentCharacter != null && start) {
+        if(GameManager.Instance != null &&  GameManager.Instance.currentCharacter != null && start) {
             
 
             GameManager.Instance.point1 = point1;
@@ -32,8 +32,7 @@ public class Play : MonoBehaviour
             GameManager.Instance.XRRig.position = point1.position;
             GameManager.Instance.XRRig.rotation = point1.rotation;
             GameManager.Instance.currentCharacter = transform;
-            GameManager.Instance.changePath = true;
-
+ 
 
             StartCoroutine(passiveMe(2));
 
@@ -41,6 +40,7 @@ public class Play : MonoBehaviour
         {
             yield return new WaitForSeconds(secs);
 
+                GameManager.Instance.changePath = true;
                 GameManager.Instance.isInSwap = true;
           
         }

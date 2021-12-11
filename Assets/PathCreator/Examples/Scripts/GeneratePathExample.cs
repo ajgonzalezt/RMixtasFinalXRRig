@@ -7,19 +7,25 @@ namespace PathCreation.Examples {
     public class GeneratePathExample : MonoBehaviour {
 
         public bool closedLoop = false;
-        private Transform[] waypoints;
+        public Transform[] waypoints;
 
         void Start () {
+            BezierPath bezierPath = new BezierPath(waypoints, closedLoop, PathSpace.xyz);
+            GetComponent<PathCreator>().bezierPath = bezierPath;
 
         }
 
         private void Update()
         {
-            if (GameManager.Instance.changePath)
+            if (GameManager.Instance != null && GameManager.Instance.changePath)
             {
-                waypoints = new Transform[] { GameManager.Instance.point1, GameManager.Instance.point2 };
-                Debug.Log(waypoints);
-                Debug.Log("------------------------------------------------------------");
+                waypoints[1] = GameManager.Instance.point1;
+                waypoints[2] = GameManager.Instance.point2;
+                Debug.LogWarning(waypoints.Length);
+                Debug.LogWarning(waypoints[1].transform.position);
+                Debug.LogWarning(waypoints[2].transform.position);
+                Debug.LogWarning(waypoints);
+                Debug.LogWarning("------------------------------------------------------------");
 
                 // waypoints[0].transform.position = new Vector3(waypoints[0].transform.position.x, waypoints[waypoints.Length - 1].transform.position.y, waypoints[0].transform.position.z);
                 // Create a new bezier path from the waypoints.

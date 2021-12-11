@@ -16,7 +16,7 @@ public class CurrentTag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.tag == "active" && GameManager.Instance.isInSwap)
+        if (GameManager.Instance != null && transform.tag == "active" && GameManager.Instance.isInSwap)
         {
        
 
