@@ -41,7 +41,7 @@ public class UpdateCharacterState : MonoBehaviour
         {
 
 
-            if (Vector3.Distance(GameManager.Instance.point2_T1.position, GameManager.Instance.XRRig.transform.position) < 0.15)
+            if (Vector3.Distance(GameManager.Instance.point2_T1.position, GameManager.Instance.XRRig.transform.position) < 0.1)
             {
 
                 GameManager.Instance.isInSwapTransition1 = false;
@@ -54,7 +54,7 @@ public class UpdateCharacterState : MonoBehaviour
         else if (GameManager.Instance != null && transform.tag == "active" && GameManager.Instance.isInSwapTransition2) {
 
 
-            if (Vector3.Distance(GameManager.Instance.point3_T2.position, GameManager.Instance.currentCharacter.transform.position) < 0.15)
+            if (Vector3.Distance(GameManager.Instance.point3_T2.position, GameManager.Instance.currentCharacter.transform.position) < 0.1)
             {
 
                 GameManager.Instance.isInSwapTransition2 = false;

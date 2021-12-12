@@ -8,6 +8,8 @@ TagManager:
   - active
   - Bullet
   - unactive
+  - selected
+  - walking
   layers:
   - Default
   - TransparentFX

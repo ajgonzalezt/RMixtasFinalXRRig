@@ -36,7 +36,7 @@ namespace PathCreation.Examples
                 Vector3 characterDirTemp = transform.forward.normalized;
                 Vector3 newPosDirTemp = (-oldPos + newPos).normalized;
 
-                transform.position = newPos;
+                transform.position = new Vector3(newPos.x, 0.022f, newPos.z);
 
 
                 //   transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newPos - transform.position), 2f);

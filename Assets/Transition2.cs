@@ -34,7 +34,9 @@ public class Transition2 : MonoBehaviour
 
            transform.position = GameManager.Instance.point1_T2.position;
            GameManager.Instance.currentCharacter = transform;
-            
+
+            transform.tag = "walking";
+
 
 
             StartCoroutine(passiveMe(2));
