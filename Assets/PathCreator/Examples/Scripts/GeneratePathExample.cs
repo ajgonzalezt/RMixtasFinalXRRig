@@ -21,8 +21,8 @@ namespace PathCreation.Examples {
             if (GameManager.Instance != null && GameManager.Instance.changePathTransition1)
             {
                 waypoints[0] = camera;
-                waypoints[1] = GameManager.Instance.point1T1;
-                waypoints[2] = GameManager.Instance.point2T1;
+                waypoints[1] = GameManager.Instance.point1_T1;
+                waypoints[2] = GameManager.Instance.point2_T1;
                 Debug.LogWarning(waypoints.Length);
                 Debug.LogWarning(waypoints[1].transform.position);
                 Debug.LogWarning(waypoints[2].transform.position);
@@ -39,9 +39,9 @@ namespace PathCreation.Examples {
             }
             else if (GameManager.Instance != null && GameManager.Instance.changePathTransition2) {
 
-                waypoints[0] = GameManager.Instance.point1T2;
-                waypoints[1] = GameManager.Instance.point2T2;
-                waypoints[2] = GameManager.Instance.point3T2;
+                waypoints[0] = GameManager.Instance.point1_T2;
+                waypoints[1] = GameManager.Instance.point2_T2;
+                waypoints[2] = GameManager.Instance.point3_T2;
                 Debug.LogWarning(waypoints.Length);
                 Debug.LogWarning(waypoints[1].transform.position);
                 Debug.LogWarning(waypoints[2].transform.position);

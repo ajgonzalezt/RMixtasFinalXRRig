@@ -31,8 +31,8 @@ public class Transition1 : MonoBehaviour
         if (GameManager.Instance != null && GameManager.Instance.currentCharacter != null && start) {
 
 
-            GameManager.Instance.point1T1 = point1;
-            GameManager.Instance.point2T1 = point2;
+            GameManager.Instance.point1_T1 = point1;
+            GameManager.Instance.point2_T1 = point2;
 
             GameManager.Instance.XRRig.position = point1.position;
             GameManager.Instance.XRRig.rotation = point1.rotation;

@@ -7,12 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get;  set; }
 
-    public Transform point1T1;
-    public Transform point2T1;
+    public Transform point1_T1;
+    public Transform point2_T1;
 
-    public Transform point1T2;
-    public Transform point2T2;
-    public Transform point3T2;
+    public Transform point1_T2;
+    public Transform point2_T2;
+    public Transform point3_T2;
 
 
       public Transform currentCharacter;

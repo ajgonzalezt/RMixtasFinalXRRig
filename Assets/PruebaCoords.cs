@@ -34,8 +34,16 @@ public class PruebaCoords : MonoBehaviour
             Debug.Log("X rot" + rot.x + ", Y rot" + rot.y + ", Z rot" + rot.z);
             Debug.Log(seleccionado.transform.tag);
             if(seleccionado.tag!="active")
-                seleccionado.GetComponent<Transition1>().start=true;
-            
+
+                if (seleccionado.GetComponent<Transition1>().isActiveAndEnabled) {
+                    seleccionado.GetComponent<Transition1>().start = true;
+                }
+
+                else if (seleccionado.GetComponent<Transition2>().isActiveAndEnabled) {
+                    seleccionado.GetComponent<Transition2>().start = true;
+                }
+
+
         }
 
     }

@@ -32,11 +32,7 @@ public class Transition2 : MonoBehaviour
         {
 
 
-
-
-            GameManager.Instance.point1T1 = point1;
-            GameManager.Instance.point2T1 = point2;
-          
+           transform.position = GameManager.Instance.point1_T2.position;
            GameManager.Instance.currentCharacter = transform;
             
 
