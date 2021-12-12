@@ -10,9 +10,9 @@ public class PruebaCoords : MonoBehaviour
     //Toca probar para poder integrar para poder obtener coordenadas de personajes
 
     public GameObject derecha;
-    public XRBaseInteractor seleccionador;
-    public Vector3 pos;
-    public Quaternion rot;
+     XRBaseInteractor seleccionador;
+     Vector3 pos;
+     Quaternion rot;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +30,11 @@ public class PruebaCoords : MonoBehaviour
             pos = seleccionado.transform.position;
             rot = seleccionado.transform.rotation;
 
-            Debug.Log("X pos" + pos.x + ", Y pos" + pos.y + ", Z pos" + pos.z);
+            Debug.LogWarning("X pos" + pos.x + ", Y pos" + pos.y + ", Z pos" + pos.z);
             Debug.Log("X rot" + rot.x + ", Y rot" + rot.y + ", Z rot" + rot.z);
             Debug.Log(seleccionado.transform.tag);
             if(seleccionado.tag!="active")
-                seleccionado.GetComponent<Play>().start=true;
+                seleccionado.GetComponent<Transition1>().start=true;
             
         }
 

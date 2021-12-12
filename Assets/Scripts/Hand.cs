@@ -39,15 +39,15 @@ public class Hand : MonoBehaviour
         // _mesh = GetComponentInChildren<SkinnedMeshRenderer>();
         
         // Physics Movement
-        _followTarget = followObject.transform;
+      
         _body = GetComponent<Rigidbody>();
         _body.collisionDetectionMode = CollisionDetectionMode.Continuous;
         _body.interpolation = RigidbodyInterpolation.Interpolate;
         _body.mass = 0f;
         
         // Teleport hands
-        _body.position = _followTarget.position;
-        _body.rotation = _followTarget.rotation;
+      //  _body.position = _followTarget.position;
+      //  _body.rotation = _followTarget.rotation;
     }
 
     private void Update()
@@ -63,6 +63,8 @@ public class Hand : MonoBehaviour
 
     private void PhysicsMove()
     {
+
+        _followTarget = followObject.transform;
         // Position
         var positionWithOffset = _followTarget.TransformPoint(positionOffset);
         var distance = Vector3.Distance(positionWithOffset, transform.position);
