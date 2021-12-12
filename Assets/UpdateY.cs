@@ -15,6 +15,6 @@ public class UpdateY : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, XRRig.position.y, transform.position.z);
+        transform.position = new Vector3(transform.position.x, XRRig.position.y-0.5f, transform.position.z);
     }
 }
