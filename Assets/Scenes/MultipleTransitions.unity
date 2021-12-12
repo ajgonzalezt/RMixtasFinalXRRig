@@ -7359,7 +7359,7 @@ GameObject:
   - component: {fileID: 1473394421}
   m_Layer: 0
   m_Name: Character (6)
-  m_TagString: active
+  m_TagString: unactive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8484,7 +8484,7 @@ GameObject:
   - component: {fileID: 1636808184}
   m_Layer: 0
   m_Name: Character (5)
-  m_TagString: unactive
+  m_TagString: active
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
