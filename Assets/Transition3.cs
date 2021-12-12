@@ -41,14 +41,14 @@ public class Transition3 : MonoBehaviour
                 IEnumerator passiveMovement(int secs)
                 {
                     yield return new WaitForSeconds(secs);
-                    GameManager.Instance.XRRig.position = point1.position;
+                    GameManager.Instance.XRRig.position = new Vector3(point1.position.x, 1.784f, point1.position.z);
                     GameManager.Instance.XRRig.rotation = point1.rotation;
                    
                 }
             }
             else
             {
-                GameManager.Instance.XRRig.position = point1.position;
+                GameManager.Instance.XRRig.position = new Vector3(point1.position.x, 1.784f, point1.position.z);
                 GameManager.Instance.XRRig.rotation = point1.rotation;
             }
 
