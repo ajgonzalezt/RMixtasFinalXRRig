@@ -21,11 +21,13 @@ public class Hand : MonoBehaviour
     
     // Physics Movement
     [SerializeField] private GameObject followObject;
+ 
     [SerializeField] private float followSpeed = 30f;
     [SerializeField] private float rotateSpeed = 100f;
     [SerializeField] private Vector3 positionOffset;
     [SerializeField] private Vector3 rotationOffset;
-    private Transform _followTarget;
+
+    public Transform initialPosition;
     private Rigidbody _body;
     public bool isActive;
     private void Start()
@@ -57,14 +59,16 @@ public class Hand : MonoBehaviour
         // AnimateHand();
         if (isActive)
         {
-            PhysicsMove();
+            PhysicsMove(followObject.transform);
+        }
+        else {
+
+            PhysicsMove(initialPosition);
         }
     }
 
-    private void PhysicsMove()
+    private void PhysicsMove(Transform _followTarget)
     {
-
-        _followTarget = followObject.transform;
         // Position
         var positionWithOffset = _followTarget.TransformPoint(positionOffset);
         var distance = Vector3.Distance(positionWithOffset, transform.position);

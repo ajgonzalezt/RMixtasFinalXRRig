@@ -541,7 +541,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156686287}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.13780594, y: -0.05163481, z: -0.89802057, w: -0.4146111}
   m_LocalPosition: {x: 0.5506369, y: 1.0989087, z: 0.023458932}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
@@ -2948,7 +2948,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695646411}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.8980202, y: 0.41461232, z: -0.13780467, w: 0.051635504}
   m_LocalPosition: {x: -0.5506368, y: 1.0989074, z: 0.023457427}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
@@ -3936,7 +3936,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860993895}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.8980202, y: 0.41461232, z: -0.13780467, w: 0.051635504}
   m_LocalPosition: {x: -0.301, y: 1.066, z: -0.023}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
@@ -5758,7 +5758,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126392751}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.13780594, y: -0.05163481, z: -0.89802057, w: -0.4146111}
   m_LocalPosition: {x: 0.5506369, y: 1.0989087, z: 0.023458932}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
@@ -7359,7 +7359,7 @@ GameObject:
   - component: {fileID: 1473394421}
   m_Layer: 0
   m_Name: Character (6)
-  m_TagString: active
+  m_TagString: unactive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7671,8 +7671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   point1: {fileID: 1103273013}
   start: 0
-  fadeEnabled: 1
-  lightColor: 1
+  fadeEnabled: 0
+  lightColor: 0
   camera: {fileID: 288961754}
 --- !u!1 &1473867429
 GameObject:
@@ -8484,7 +8484,7 @@ GameObject:
   - component: {fileID: 1636808184}
   m_Layer: 0
   m_Name: Character (5)
-  m_TagString: unactive
+  m_TagString: active
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

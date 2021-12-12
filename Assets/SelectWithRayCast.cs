@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 
-public class PruebaCoords : MonoBehaviour
+public class SelectWithRayCast: MonoBehaviour
 {
     //Usé la documentacion de https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@1.0/api/UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor.html
     //Toca probar para poder integrar para poder obtener coordenadas de personajes
@@ -41,6 +41,10 @@ public class PruebaCoords : MonoBehaviour
 
                 else if (seleccionado.GetComponent<Transition2>().isActiveAndEnabled) {
                     seleccionado.GetComponent<Transition2>().start = true;
+                }
+                else if (seleccionado.GetComponent<Transition3>().isActiveAndEnabled)
+                {
+                    seleccionado.GetComponent<Transition3>().start = true;
                 }
 
 

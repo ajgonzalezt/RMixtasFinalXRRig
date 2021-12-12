@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CurrentTag : MonoBehaviour
+public class UpdateCharacterState : MonoBehaviour
 
 {
     public Transform point1_T2;
     public Transform point2_T2;
     public Transform point3_T2;
+    public GameObject upperMotion;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,9 @@ public class CurrentTag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+     
+      
         if (GameManager.Instance != null && transform.tag == "active" && GameManager.Instance.isInSwapTransition1)
         {
 
