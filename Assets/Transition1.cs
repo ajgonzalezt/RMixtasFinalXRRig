@@ -63,6 +63,7 @@ public class Transition1 : MonoBehaviour
 
 
             GameManager.Instance.currentCharacter = transform;
+            transform.tag = "walking";
 
 
             StartCoroutine(passiveMe(3));

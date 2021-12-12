@@ -26,7 +26,7 @@ namespace PathCreation.Examples
 
         void Update()
         {
-            if (GameManager.Instance != null && pathCreator != null && GameManager.Instance.isInSwapTransition2 && transform.tag != "active")
+            if (GameManager.Instance != null && pathCreator != null && GameManager.Instance.isInSwapTransition2 && transform.tag == "walking")
             {
 
 
