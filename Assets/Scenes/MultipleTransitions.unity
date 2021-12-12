@@ -5955,7 +5955,7 @@ MonoBehaviour:
   point1_T2: {fileID: 1604526125}
   point2_T2: {fileID: 1777620939}
   point3_T2: {fileID: 1741186601}
-  currentCharacter: {fileID: 1473394413}
+  currentCharacter: {fileID: 1636808175}
   isInSwapTransition1: 0
   isInSwapTransition2: 0
   changePathTransition1: 0
