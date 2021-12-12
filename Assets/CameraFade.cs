@@ -26,6 +26,7 @@ public class CameraFade : MonoBehaviour
 
     private void Update()
     {
+
         if (direction == 0 && startFadedOut)
         {
             if (alpha >= 1f) // Fully faded out
@@ -33,6 +34,7 @@ public class CameraFade : MonoBehaviour
                 alpha = 1f;
                 time = 0f;
                 direction = 1;
+                startFadedOut = false;
             }
             else // Fully faded in
             {

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TransitionCharacter2.unity
+    path: Assets/Scenes/MultipleTransitions.unity
     guid: ea8ca0647b591a240b62dbc638b56953
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: eace45a2c2224624ab4585ac3a82d6fd,
