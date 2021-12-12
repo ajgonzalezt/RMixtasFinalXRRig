@@ -36,7 +36,6 @@ public class UpdateCharacterState : MonoBehaviour
                 transform.tag = "unactive";
                 GameManager.Instance.currentCharacter.transform.tag = "active";
 
-
             }
 
         }
