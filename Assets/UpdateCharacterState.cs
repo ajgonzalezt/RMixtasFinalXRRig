@@ -5,11 +5,12 @@ using UnityEngine;
 public class UpdateCharacterState : MonoBehaviour
 
 {
-    public Transform point1_T2;
-    public Transform point2_T2;
-    public Transform point3_T2;
-    public GameObject upperMotion;
 
+
+    public Transform point1;
+    public Transform point2;
+    public Transform point3;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,21 @@ public class UpdateCharacterState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.tag != "active") {
+        if (transform.tag != "active")
+        {
             Vector3 pos = transform.position;
             transform.position = new Vector3(pos.x, 0.022f, pos.z);
-        } 
+        }
+
+        if(transform.tag == "active" && !GameManager.Instance.changePathTransition2) {
+
+             GameManager.Instance.point1_T2 = point1;
+             GameManager.Instance.point2_T2 = point2;
+             GameManager.Instance.point3_T2 = point3;
+
+         
+
+        }
      
       
         if (GameManager.Instance != null && transform.tag == "active" && GameManager.Instance.isInSwapTransition1)
@@ -49,9 +61,6 @@ public class UpdateCharacterState : MonoBehaviour
                 transform.tag = "unactive";
                 GameManager.Instance.currentCharacter.transform.tag = "active";
 
-                GameManager.Instance.point1_T2 = point1_T2;
-                GameManager.Instance.point2_T2 = point2_T2;
-                GameManager.Instance.point3_T2 = point3_T2;
 
             }
 

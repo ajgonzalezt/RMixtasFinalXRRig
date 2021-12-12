@@ -48,6 +48,8 @@ public class Transition2 : MonoBehaviour
 
             }
 
+           
+
 
         }
         start = false;
