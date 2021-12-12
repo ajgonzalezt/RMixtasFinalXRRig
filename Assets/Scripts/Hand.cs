@@ -63,7 +63,8 @@ public class Hand : MonoBehaviour
         }
         else {
 
-            PhysicsMove(initialPosition);
+            transform.position = initialPosition.position;
+            transform.rotation = initialPosition.rotation;
         }
     }
 
