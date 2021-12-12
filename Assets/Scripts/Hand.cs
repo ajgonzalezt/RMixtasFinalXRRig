@@ -46,8 +46,8 @@ public class Hand : MonoBehaviour
         _body.mass = 0f;
         
         // Teleport hands
-        _body.position = _followTarget.position;
-        _body.rotation = _followTarget.rotation;
+        //_body.position = _followTarget.position;
+        //_body.rotation = _followTarget.rotation;
     }
 
     private void Update()
