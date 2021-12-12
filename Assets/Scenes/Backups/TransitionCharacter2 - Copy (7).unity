@@ -342,6 +342,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: -90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &31161788
 GameObject:
@@ -1123,6 +1124,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: -90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &85735555
 GameObject:
@@ -4155,6 +4157,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: 90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 1
 --- !u!1 &395349622
 GameObject:
@@ -9003,6 +9006,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: 90, y: 0, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &849193199
 GameObject:
@@ -9289,6 +9293,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: -90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &872414642
 GameObject:
@@ -11554,6 +11559,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: 90, y: 0, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &1051093175
 GameObject:
@@ -12389,6 +12395,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: 90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &1156501654
 GameObject:
@@ -12513,11 +12520,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465693f420735624c86669e079c44a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point1: {fileID: 713104347}
-  point2: {fileID: 1103273013}
+  point1_T1: {fileID: 0}
+  point2_T1: {fileID: 0}
+  point1_T2: {fileID: 0}
+  point2_T2: {fileID: 0}
+  point3_T2: {fileID: 0}
   currentCharacter: {fileID: 1473394413}
-  isInSwap: 0
-  changePath: 0
+  isInSwapTransition1: 0
+  isInSwapTransition2: 0
+  changePathTransition1: 0
+  changePathTransition2: 0
   XRRig: {fileID: 974564251}
 --- !u!1 &1163021674
 GameObject:
@@ -15981,6 +15993,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79c0db136e21ef4e9d2605da04884ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  point1: {fileID: 0}
+  point2: {fileID: 0}
+  point3: {fileID: 0}
 --- !u!114 &1473394416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15997,6 +16012,9 @@ MonoBehaviour:
   point1: {fileID: 713104347}
   point2: {fileID: 1103273013}
   start: 0
+  fadeEnabled: 0
+  lightColor: 0
+  camera: {fileID: 0}
 --- !u!114 &1473394417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17862,6 +17880,9 @@ MonoBehaviour:
   point1: {fileID: 676474857}
   point2: {fileID: 1681151345}
   start: 0
+  fadeEnabled: 0
+  lightColor: 0
+  camera: {fileID: 0}
 --- !u!114 &1636808177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17874,6 +17895,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79c0db136e21ef4e9d2605da04884ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  point1: {fileID: 0}
+  point2: {fileID: 0}
+  point3: {fileID: 0}
 --- !u!65 &1636808178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18280,6 +18304,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: 90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &1667417329
 GameObject:
@@ -20717,6 +20742,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: 90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 0
 --- !u!1 &1855126276
 GameObject:
@@ -23672,6 +23698,7 @@ MonoBehaviour:
   rotateSpeed: 100
   positionOffset: {x: 0.03, y: -0.04, z: -0.11}
   rotationOffset: {x: -90, y: 90, z: 0}
+  initialPosition: {fileID: 0}
   isActive: 1
 --- !u!1 &2132117886
 GameObject:

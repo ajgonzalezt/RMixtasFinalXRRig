@@ -31,7 +31,7 @@ namespace PathCreation.Examples
 
                 distanceTravelled += speed * Time.deltaTime;
                 Vector3 newPos = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
-                transform.position = new Vector3(newPos.x, 1.784f, newPos.z);
+                transform.position = new Vector3(newPos.x, 0.8f, newPos.z);
 
 
             }
