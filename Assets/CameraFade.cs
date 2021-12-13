@@ -16,6 +16,7 @@ public class CameraFade : MonoBehaviour
     private int direction = 0;
     private float time = 0f;
 
+    public GameObject plane;
     private void Start()
     {
         if (startFadedOut) alpha = 1f; else alpha = 0f;
