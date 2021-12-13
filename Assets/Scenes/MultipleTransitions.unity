@@ -683,6 +683,7 @@ GameObject:
   - component: {fileID: 55037581}
   - component: {fileID: 55037580}
   - component: {fileID: 55037579}
+  - component: {fileID: 55037586}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -702,7 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 020c662dda788604da5c5813cf4e4275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreElemento: Otro
+  nombreElemento: Green
   xrGrab: {fileID: 55037580}
 --- !u!114 &55037580
 MonoBehaviour:
@@ -711,7 +712,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55037578}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -858,7 +859,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b7060f496b95524f89191eb988c95b5, type: 2}
+  - {fileID: 2100000, guid: 811ae98adb9177e47a8e68289e0e7ac1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -900,8 +901,24 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &55037586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55037578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_TintOnHover: 1
+  m_TintOnSelection: 1
+  m_TintRenderers: []
 --- !u!1 &59055425
 GameObject:
   m_ObjectHideFlags: 0
@@ -3380,6 +3397,7 @@ GameObject:
   - component: {fileID: 225272897}
   - component: {fileID: 225272896}
   - component: {fileID: 225272895}
+  - component: {fileID: 225272902}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -3399,7 +3417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 020c662dda788604da5c5813cf4e4275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreElemento: Otro
+  nombreElemento: Purple
   xrGrab: {fileID: 225272896}
 --- !u!114 &225272896
 MonoBehaviour:
@@ -3408,7 +3426,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225272894}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -3555,7 +3573,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b7060f496b95524f89191eb988c95b5, type: 2}
+  - {fileID: 2100000, guid: 4975be71eca511a4e9bd21fe865ec5a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3597,8 +3615,24 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &225272902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225272894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_TintOnHover: 1
+  m_TintOnSelection: 1
+  m_TintRenderers: []
 --- !u!1 &225862105
 GameObject:
   m_ObjectHideFlags: 0
@@ -7129,6 +7163,7 @@ GameObject:
   - component: {fileID: 522115331}
   - component: {fileID: 522115330}
   - component: {fileID: 522115329}
+  - component: {fileID: 522115336}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -7148,7 +7183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 020c662dda788604da5c5813cf4e4275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreElemento: Otro
+  nombreElemento: Orange
   xrGrab: {fileID: 522115330}
 --- !u!114 &522115330
 MonoBehaviour:
@@ -7157,7 +7192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522115328}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -7304,7 +7339,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b7060f496b95524f89191eb988c95b5, type: 2}
+  - {fileID: 2100000, guid: 09799346065fae642a7fc5e33caf84cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7346,8 +7381,24 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &522115336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522115328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_TintOnHover: 1
+  m_TintOnSelection: 1
+  m_TintRenderers: []
 --- !u!1 &523853664
 GameObject:
   m_ObjectHideFlags: 0
@@ -13006,6 +13057,7 @@ GameObject:
   - component: {fileID: 957182181}
   - component: {fileID: 957182180}
   - component: {fileID: 957182179}
+  - component: {fileID: 957182186}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -13025,7 +13077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 020c662dda788604da5c5813cf4e4275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreElemento: Otro
+  nombreElemento: Blue
   xrGrab: {fileID: 957182180}
 --- !u!114 &957182180
 MonoBehaviour:
@@ -13034,7 +13086,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957182178}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -13223,8 +13275,24 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &957182186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957182178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_TintOnHover: 1
+  m_TintOnSelection: 1
+  m_TintRenderers: []
 --- !u!1 &957743192
 GameObject:
   m_ObjectHideFlags: 0
@@ -20516,7 +20584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a464499f234643e4da24a518684e7f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: Otro
+  color: Green
 --- !u!1 &1473867429
 GameObject:
   m_ObjectHideFlags: 0
@@ -21549,8 +21617,9 @@ GameObject:
   - component: {fileID: 1526414797}
   - component: {fileID: 1526414796}
   - component: {fileID: 1526414795}
+  - component: {fileID: 1526414802}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21577,7 +21646,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526414794}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -21724,7 +21793,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b7060f496b95524f89191eb988c95b5, type: 2}
+  - {fileID: 2100000, guid: c295c26bfb2274e4a858fcbbaab4518c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21766,8 +21835,24 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526414802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526414794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_TintOnHover: 1
+  m_TintOnSelection: 1
+  m_TintRenderers: []
 --- !u!1 &1533504576
 GameObject:
   m_ObjectHideFlags: 0
@@ -23531,7 +23616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a464499f234643e4da24a518684e7f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: Red
+  color: Blue
 --- !u!1 &1637060507
 GameObject:
   m_ObjectHideFlags: 0
@@ -24435,7 +24520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a464499f234643e4da24a518684e7f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: Otro
+  color: Purple
 --- !u!1 &1710473726
 GameObject:
   m_ObjectHideFlags: 0
@@ -27996,7 +28081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a464499f234643e4da24a518684e7f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: Otro
+  color: Orange
 --- !u!1 &1908563454
 GameObject:
   m_ObjectHideFlags: 0
@@ -29017,7 +29102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a464499f234643e4da24a518684e7f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: Otro
+  color: Red
 --- !u!1 &1961633604
 GameObject:
   m_ObjectHideFlags: 0
