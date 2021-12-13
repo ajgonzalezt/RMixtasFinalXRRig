@@ -63,7 +63,7 @@ public class Transition1 : MonoBehaviour
 
 
             GameManager.Instance.currentCharacter = transform;
-         
+           
 
 
             StartCoroutine(passiveMe(3));

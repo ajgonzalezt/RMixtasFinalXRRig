@@ -10,6 +10,7 @@ public class Transition3 : MonoBehaviour
     public bool start = false;
     public bool fadeEnabled = false;
     public bool lightColor = false;
+
     public Transform camera;
 
     // Start is called before the first frame update
@@ -34,6 +35,11 @@ public class Transition3 : MonoBehaviour
                     camera.GetComponent<CameraFade>().fadeColor = Color.white;
                 }
 
+               else
+                {
+                    camera.GetComponent<CameraFade>().fadeColor = Color.black;
+                }
+
                 camera.GetComponent<CameraFade>().startFadedOut = true;
 
                 StartCoroutine(passiveMovement(1));
@@ -41,14 +47,14 @@ public class Transition3 : MonoBehaviour
                 IEnumerator passiveMovement(int secs)
                 {
                     yield return new WaitForSeconds(secs);
-                    GameManager.Instance.XRRig.position = new Vector3(point1.position.x, 1.784f, point1.position.z);
+                    GameManager.Instance.XRRig.position = new Vector3(point1.position.x, 0.8f, point1.position.z);
                     GameManager.Instance.XRRig.rotation = point1.rotation;
                    
                 }
             }
             else
             {
-                GameManager.Instance.XRRig.position = new Vector3(point1.position.x, 1.784f, point1.position.z);
+                GameManager.Instance.XRRig.position = new Vector3(point1.position.x, 0.8f, point1.position.z);
                 GameManager.Instance.XRRig.rotation = point1.rotation;
             }
 
