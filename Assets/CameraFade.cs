@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class CameraFade : MonoBehaviour
 {
 
@@ -15,6 +15,8 @@ public class CameraFade : MonoBehaviour
     private Texture2D texture;
     private int direction = 0;
     private float time = 0f;
+
+    public Image image;
 
     private void Start()
     {
@@ -44,17 +46,21 @@ public class CameraFade : MonoBehaviour
             }
 
         }
-    }
-    public void OnGUI()
-    {
-        if (alpha > 0f) GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), texture);
+
+
+
+        if (alpha > 0f) image.color = new Color(fadeColor.r, fadeColor.g, fadeColor.b, alpha);
         if (direction != 0)
         {
             time += direction * Time.deltaTime * speedScale;
             alpha = Curve.Evaluate(time);
-            texture.SetPixel(0, 0, new Color(fadeColor.r, fadeColor.g, fadeColor.b, alpha));
-            texture.Apply();
+          // texture.SetPixel(0, 0, new Color(fadeColor.r, fadeColor.g, fadeColor.b, alpha));
+           // texture.Apply();
             if (alpha <= 0f || alpha >= 1f) direction = 0;
         }
+    }
+    public void OnGUI()
+    {
+
     }
 }
