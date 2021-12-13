@@ -20,6 +20,18 @@ public class UpdateCharacterState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        GameObject[] activeGs = GameObject.FindGameObjectsWithTag("active");
+
+        if (activeGs.Length > 1) {
+
+            for (int i = 1; i < activeGs.Length; i++)
+            {
+                activeGs[i].tag = "unactive";
+            }
+            
+        }
+
         if (transform.tag != "active")
         {
             Vector3 pos = transform.position;
